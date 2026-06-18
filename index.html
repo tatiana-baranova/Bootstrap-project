@@ -3,10 +3,44 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/bootstrap.min.css"/>
     <title>Bootstrap project</title>
 </head>
 <body>
-    
+    <div class="container bg-block">
+        <div class="row">
+            <div class="col-3 bg-block-2">
+                <h2>Row 1 Col 1</h2>
+            </div>
+            <div class="col">
+                <h2>Row 1 Col 2</h2>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-2 bg-block-2">
+                <h2>Row 2 Col 1</h2>
+            </div>
+            <div class="col-3">
+                <h2>Row 2 Col 2</h2>
+            </div>
+            <div class="offset-1 col-3 bg-block-2">
+                <h2>Row 2 Col 3</h2>
+            </div>
+            <div class="col-3">
+                <h2>Row 2 Col 4</h2>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-6 col-md-6 col-12 bg-block-3">
+                <h1>Main side </h1>
+            </div>
+            <div class="offset-lg-2 col-lg-4 col-md-6 col-12 bg-block-2">
+                <h1>Aside</h1>
+            </div>
+        </div>
+
+    </div>
+
 </body>
 </html>

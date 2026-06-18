@@ -34,3 +34,14 @@ img {
 button {
     cursor: pointer;
 }
+
+.bg-block{
+    background-color: rgba(192, 224, 96, 0.732);
+    color: rgb(79, 94, 4);
+}
+.bg-block-2{
+    background-color: antiquewhite;
+}
+.bg-block-3{
+    background-color: rgba(122, 122, 56, 0.695);
+}
