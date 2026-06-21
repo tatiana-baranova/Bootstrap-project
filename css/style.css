@@ -52,3 +52,10 @@ button {
 .main-form{
     width: 75%;
 }
+.block{
+    width: 150px;
+    height: 150px;
+}
+body{
+    height: 2000px;
+}
