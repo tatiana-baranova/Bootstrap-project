@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/bootstrap.min.css"/>
+
+    <title>Java Script</title>
+</head>
+<body class="bg-dark text-light">
+
+    <div class="container m-5">
+        <button class="btn btn-info"
+        data-bs-toggle="collapse"
+        data-bs-target="#op">Click
+        </button>
+        <button class="btn btn-outline-danger"
+        data-bs-toggle="collapse"
+        data-bs-target="#op-2">Click
+        </button>
+
+        <input type="button" class="btn btn-warning" data-bs-target=".hide-object" data-bs-toggle="collapse" value="Open/Close two object">
+        <div class="collapse hide-object" id="op">
+            <div class="alert alert-success mt-2">
+                <p>If you try this as-is, you’ll see an error in the console like the following.</p>
+            </div>
+        </div>
+
+        <div class="hide-object collapse" id="op-2">
+            <div class="alert alert-danger mt-2">
+                <p>If you try this as-is, you’ll see an error in the console like the following.</p>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container m-5">
+        <button class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#modal-window">Open window</button>
+        <div class="modal fade" id="modal-window">
+        <div class="modal-dialog modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header">
+                <h5 class="modal-title">Information for user</h5>
+                <button class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+            <div class="modal-body bg-light">
+                <p >
+                    Data attributes.
+                    Nearly all Bootstrap plugins can be enabled and configured through HTML alone with data attributes (our preferred way of using JavaScript functionality). Be sure to only use one set of data attributes on a single element (e.g., you cannot trigger a tooltip and modal from the same button.)
+
+                    As options can be passed via data attributes or JavaScript, you can append an option name to data-bs-, as in data-bs-animation="{value}". Make sure to change the case type of the option name from “camelCase” to “kebab-case” when passing the options via data attributes. For example, use data-bs-custom-class="beautifier" instead of data-bs-customClass="beautifier".
+
+                    As of Bootstrap 5.2.0, all components support an experimental reserved data attribute data-bs-config that can house simple component configuration as a JSON string. When an element has data-bs-config='{"delay":0, "title":123}' and data-bs-title="456" attributes, the final title value will be 456 and the separate data attributes will override values given on data-bs-config. In addition, existing data attributes are able to house JSON values like data-bs-delay='{"show":0,"hide":150}'.
+
+                    The final configuration object is the merged result of data-bs-config, data-bs-, and js object where the latest given key-value overrides the others.
+                    The WAI ARIA standard defines an actual role="menu" widget, but this is specific to application-like menus which trigger actions or functions. ARIA menus can only contain menu items, checkbox menu items, radio button menu items, radio button groups, and sub-menus.
+                    Bootstrap’s dropdowns, on the other hand, are designed to be generic and applicable to a variety of situations and markup structures. For instance, it is possible to create dropdowns that contain additional inputs and form controls, such as search fields or login forms. For this reason, Bootstrap does not expect (nor automatically add) any of the role and aria- attributes required for true ARIA menus. Authors will have to include these more specific attributes themselves.
+
+                    However, Bootstrap does add built-in support for most standard keyboard menu interactions, such as the ability to move through individual .dropdown-item elements using the cursor keys and close the menu with the Esc key.
+                </p>
+            </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <div class="container m-5">
+        <div class="dropdown">
+            <button class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown">
+            Click me
+        </button>
+        <ul class="dropdown-menu">
+            <li>
+                <a href="#" class="dropdown-item active">Link №1</a>
+            </li>
+            <li>
+                <a href="#" class="dropdown-item">Link №2</a>
+            </li>
+            <li>
+                <hr class="dropdown-divider">
+            </li>
+            <li>
+                <a href="#" class="dropdown-item">Link №3</a>
+            </li>
+            <li>
+                <a href="#" class="dropdown-item">Link №4</a>
+            </li>
+            <li>
+                <a href="#" class="dropdown-item">Link №5</a>
+            </li>
+        </ul>
+        </div>
+    </div>
+
+
+    <div class="container m-5">
+        <div class="dropdown">
+            <button type="button" class="btn btn-info dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false" data-bs-auto-close="outside">
+                Dropdown form
+            </button>
+        <form class="dropdown-menu  bg-secondary text-light p-4">
+            <div class="mb-3">
+            <label for="exampleDropdownFormEmail2" class="form-label">Email address</label>
+            <input type="email" class="form-control" id="exampleDropdownFormEmail2" placeholder="email@example.com">
+            </div>
+            <div class="mb-3">
+            <label for="exampleDropdownFormPassword2" class="form-label">Password</label>
+            <input type="password" class="form-control" id="exampleDropdownFormPassword2" placeholder="Password">
+            </div>
+            <div class="mb-3">
+            <div class="form-check">
+                <input type="checkbox" class="form-check-input" id="dropdownCheck2">
+                <label class="form-check-label" for="dropdownCheck2">
+                Remember me
+                </label>
+            </div>
+            </div>
+            <button type="submit" class="btn btn-info">Sign in</button>
+        </form>
+        </div>
+    </div>
+    <script
+    src="https://code.jquery.com/jquery-4.0.0.min.js"
+    integrity="sha256-OaVG6prZf4v69dPg6PhVattBXkcOWQB62pdZ3ORyrao="
+    crossorigin="anonymous">
+    </script>
+    <script src="./js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
